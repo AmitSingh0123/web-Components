@@ -27,3 +27,13 @@
 .code-container-3.active {
   display: block;
 }
+.code-container-4.active,
+.code-container-5.active,
+.code-container-6.active {
+  display: block;
+}
+.code-container-7.active,
+.code-container-8.active,
+.code-container-9.active {
+  display: block;
+}

@@ -37,27 +37,27 @@
       <div class="components-container-1">
         <div class="main-component">
           <!-- components start -->
-          <div class="bg-white flex w-100 h-10 p-2 align-center">
-            <ul class="flex w-100 decoration-none align-center">
-              <li class="f-2 m-2">
-                <a href="#" class="decoration-none text-dark">Home</a>
+          <div class="navbar1">
+            <ul class="links-cantainer">
+              <li class="nav-items">
+                <a href="#home" class="">Home</a>
               </li>
-              <li class="f-2 m-2">
-                <a href="#" class="decoration-none text-dark">Blog</a>
+              <li class="nav-items">
+                <a href="#blog" class="Blog">Blog</a>
               </li>
-              <li class="f-2 m-2">
-                <a href="#" class="decoration-none text-dark">
+              <li class="nav-items">
+                <a href="#about" class=" About">
                   About
                 </a>
               </li>
-              <li class="f-2 m-2">
-                <a href="#" class="decoration-none text-dark">Contact</a>
+              <li class="nav-items">
+                <a href="#contact" class="Contact">Contact</a>
               </li>
             </ul>
           </div>
           <!-- components end -->
         </div>
-        <hr />
+        <hr/>
 
         <div class="html-code">
           <div class="code-title">
@@ -66,10 +66,26 @@
           </div>
           <hr />
           <div class="code-container-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-            saepe perspiciatis, nulla magnam inventore ullam maiores?
-            Distinctio unde nostrum laborum porro iste aliquid modi, sit
-            optio, doloremque voluptatibus quis quisquam!
+          <pre>
+              &lt;nav class=&quot;navbar&quot;&gt;
+                &lt;ul class=&quot;links-cantainer&quot;&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#home&quot; class=&quot;&quot;&gt;Home&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#blog&quot; class=&quot;blog&quot;&gt;Blog&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#about&quot; class=&quot; about&quot;&gt;
+                      About
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#contact&quot; class=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            </pre>
           </div>
         </div>
         <hr />
@@ -80,10 +96,41 @@
           </div>
           <hr />
           <div class="code-container-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-            saepe perspiciatis, nulla magnam inventore ullam maiores?
-            Distinctio unde nostrum laborum porro iste aliquid modi, sit
-            optio, doloremque voluptatibus quis quisquam!
+          <pre>
+              .navbar{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                height:8rem;
+                display: grid;
+                align-items: center;
+                padding: 2rem 4rem;
+              }
+              .navbar ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 5rem;
+                
+              }
+              .navbar ul a{
+                font-size: 2.5rem;
+                color:rgb(38, 38, 38);
+                font-weight: 900;
+                font-family: sans-serif;
+                text-decoration: none;
+              }
+              .navbar ul li:hover{
+                border-bottom:5px solid black;
+              }
+              .navbar ul li{
+                opacity: .5;
+              }
+              .navbar ul li.active{
+                border-bottom:5px solid black;
+                opacity:1;
+              }
+          </pre>
           </div>
         </div>
         <hr />
@@ -94,24 +141,262 @@
           </div>
           <hr />
           <div class="code-container-3">
-            Lorem ipsum amit amit amita dolor sit amet consectetur,
-            adipisicing elit. Totam saepe perspiciatis, nulla magnam inventore
-            ullam maiores? Distinctio unde nostrum laborum porro iste aliquid
-            modi, sit optio, doloremque voluptatibus quis quisquam!
+            <pre>
+            const navbar = document.querySelectorAll('.nav-items');
+            navbar.forEach(item => {
+              item.addEventListener('click', function() {                
+                navbar1.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+              });
+            });
+          </pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="components-container-2">
+        <div class="main-component">
+          <!-- components start -->
+          <div class="navbar1">
+            <ul class="links-cantainer-1">
+              <li class="nav-items">
+                <a href="#home" class="">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="#blog" class="Blog">Blog</a>
+              </li>
+              <li class="nav-items">
+                <a href="#about" class=" About">
+                  About
+                </a>
+              </li>
+              <li class="nav-items">
+                <a href="#contact" class="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- components end -->
+        </div>
+        <hr/>
+
+        <div class="html-code">
+          <div class="code-title">
+            <h2>html code</h2>
+            <i class="bx bxs-chevron-down" id="html-btn-1"></i>
+          </div>
+          <hr />
+          <div class="code-container-4">
+          <pre>
+              &lt;nav class=&quot;navbar&quot;&gt;
+                &lt;ul class=&quot;links-cantainer&quot;&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#home&quot; class=&quot;&quot;&gt;Home&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#blog&quot; class=&quot;blog&quot;&gt;Blog&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#about&quot; class=&quot; about&quot;&gt;
+                      About
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#contact&quot; class=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            </pre>
+          </div>
+        </div>
+        <hr />
+        <div class="html-code">
+          <div class="code-title">
+            <h2>css code</h2>
+            <i class="bx bxs-chevron-down" id="css-btn-1"></i>
+          </div>
+          <hr />
+          <div class="code-container-5">
+          <pre>
+              .navbar{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                height:8rem;
+                display: grid;
+                align-items: center;
+                padding: 2rem 4rem;
+              }
+              .navbar ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 5rem;
+                
+              }
+              .navbar ul a{
+                font-size: 2.5rem;
+                color:rgb(38, 38, 38);
+                font-weight: 900;
+                font-family: sans-serif;
+                text-decoration: none;
+              }
+              .navbar ul li:hover{
+                border-bottom:5px solid black;
+              }
+              .navbar ul li{
+                opacity: .5;
+              }
+              .navbar ul li.active{
+                border-bottom:5px solid black;
+                opacity:1;
+              }
+          </pre>
+          </div>
+        </div>
+        <hr />
+        <div class="html-code">
+          <div class="code-title">
+            <h2>javascript code</h2>
+            <i class="bx bxs-chevron-down" id="js-btn-1"></i>
+          </div>
+          <hr />
+          <div class="code-container-6">
+            <pre>
+            const navbar = document.querySelectorAll('.nav-items');
+            navbar.forEach(item => {
+              item.addEventListener('click', function() {                
+                navbar1.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+              });
+            });
+          </pre>
+          </div>
+        </div>
+      </div>
+      <div class="components-container-2">
+        <div class="main-component">
+          <!-- components start -->
+          <div class="navbar1">
+            <ul class="links-cantainer-2">
+              <li class="nav-items">
+                <a href="#home" class="">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="#blog" class="Blog">Blog</a>
+              </li>
+              <li class="nav-items">
+                <a href="#about" class=" About">
+                  About
+                </a>
+              </li>
+              <li class="nav-items">
+                <a href="#contact" class="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- components end -->
+        </div>
+        <hr/>
+
+        <div class="html-code">
+          <div class="code-title">
+            <h2>html code</h2>
+            <i class="bx bxs-chevron-down" id="html-btn-2"></i>
+          </div>
+          <hr />
+          <div class="code-container-7">
+          <pre>
+              &lt;nav class=&quot;navbar&quot;&gt;
+                &lt;ul class=&quot;links-cantainer&quot;&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#home&quot; class=&quot;&quot;&gt;Home&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#blog&quot; class=&quot;blog&quot;&gt;Blog&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#about&quot; class=&quot; about&quot;&gt;
+                      About
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-items&quot;&gt;
+                    &lt;a href=&quot;#contact&quot; class=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            </pre>
+          </div>
+        </div>
+        <hr />
+        <div class="html-code">
+          <div class="code-title">
+            <h2>css code</h2>
+            <i class="bx bxs-chevron-down" id="css-btn-2"></i>
+          </div>
+          <hr />
+          <div class="code-container-8">
+          <pre>
+              .navbar{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                height:8rem;
+                display: grid;
+                align-items: center;
+                padding: 2rem 4rem;
+              }
+              .navbar ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 5rem;
+                
+              }
+              .navbar ul a{
+                font-size: 2.5rem;
+                color:rgb(38, 38, 38);
+                font-weight: 900;
+                font-family: sans-serif;
+                text-decoration: none;
+              }
+              .navbar ul li:hover{
+                border-bottom:5px solid black;
+              }
+              .navbar ul li{
+                opacity: .5;
+              }
+              .navbar ul li.active{
+                border-bottom:5px solid black;
+                opacity:1;
+              }
+          </pre>
+          </div>
+        </div>
+        <hr />
+        <div class="html-code">
+          <div class="code-title">
+            <h2>javascript code</h2>
+            <i class="bx bxs-chevron-down" id="js-btn-2"></i>
+          </div>
+          <hr />
+          <div class="code-container-9">
+            <pre>
+            const navbar = document.querySelectorAll('.nav-items');
+            navbar.forEach(item => {
+              item.addEventListener('click', function() {                
+                navbar1.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+              });
+            });
+          </pre>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <div class="aaasassad">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi
-    recusandae, accusamus ut repellendus deserunt deleniti magni libero natus
-    fugit, accusantium facere vel magnam repudiandae aliquid excepturi ullam
-    placeat consequatur earum eligendi a. Quaerat, quidem. Quaerat esse nihil
-    aspernatur quia rem beatae vero saepe neque temporibus, eum corrupti,
-    eveniet sapiente?
-  </div>
+  
   <script src="index.js"></script>
+  <script src="/Navbars-Container/navbar1.js"></script>
 </body>
 
 </html>

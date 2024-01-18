@@ -175,16 +175,36 @@ hr {
 .code-container-1,
 .code-container-2,
 .code-container-3 {
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
   color: #fff;
   transition: all ease-in-out 0.5s;
-  height: 40rem;
-  font-size: 2.5rem;
+  height:40rem;
+  font-size: 2rem;
   display: none;
+  overflow-y: scroll;
 }
-
-
-
+.code-container-4,
+.code-container-5,
+.code-container-6 {
+  padding: 1rem 1rem;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+  height:40rem;
+  font-size: 2rem;
+  display: none;
+  overflow-y: scroll;
+}
+.code-container-7,
+.code-container-8,
+.code-container-9 {
+  padding: 1rem 1rem;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+  height:40rem;
+  font-size: 2rem;
+  display: none;
+  overflow-y: scroll;
+}
 
 .bx {
   cursor: pointer;
@@ -192,4 +212,11 @@ hr {
 
 .html-code {
   height: 100%;
+}
+
+.components-container-2{
+  width: 100%;
+  border: 1px solid var(--code-border-color);
+  border-radius: 1rem;
+  margin-top:10rem;
 }
